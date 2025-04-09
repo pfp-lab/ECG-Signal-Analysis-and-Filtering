@@ -93,16 +93,16 @@ for n=1:length(DFT_FILTERED)
 end
 
 figure()
-plot(f,real(IDFT))
+plot(t,real(IDFT))
 title('Real part')
-xlabel('Frequency [Hz]')
+xlabel('Time [s]')
 ylabel('Real part')
 grid minor
 
 figure()
-plot(f,imag(IDFT))
+plot(t,imag(IDFT))
 title('Imaginary part')
-xlabel('Frequency [Hz]')
+xlabel('Time [s]')
 ylabel('Imaginary part')
 grid minor
 
@@ -148,4 +148,3 @@ for n = 1:length(diff_RR)-1
     plot(diff_RR(n),diff_RR(n+1),'s');
     grid on; grid minor; title('Scatter plot')
 end
-
